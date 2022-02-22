@@ -10,5 +10,7 @@ export const MovieDbApi = {
     fetchHorrorMovies: `/discover/tv?api_key=${MOVIE_DB_API_KEY}&with_genres=27`,
     fetchRomanceMovies: `/discover/tv?api_key=${MOVIE_DB_API_KEY}&with_genres=10749`,
     fetchDocumentMovies: `/discover/tv?api_key=${MOVIE_DB_API_KEY}&with_genres=99`,
+    fetchMovieUrl: (id: string) =>
+      `/movie/${id}/videos?api_key=${MOVIE_DB_API_KEY}`,
   },
 };

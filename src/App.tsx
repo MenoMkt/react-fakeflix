@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.scss";
+import { Banner } from "./component/Banner";
+import { Nav } from "./component/Nav";
 import { Row } from "./component/Row";
 import { MovieDbApi } from "./model/constants";
 import movieReq from "./model/movieDbRequest";
@@ -11,6 +13,8 @@ function App() {
   // },[])
   return (
     <div className="App">
+      <Nav></Nav>
+      <Banner></Banner>
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={MovieDbApi.endpoint.fetchNetflixOriginals}
